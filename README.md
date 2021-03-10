@@ -1,5 +1,5 @@
-# Precision Ag
+# Useful Precision Ag Tools
 
-### Updated 3/10/2021
+### Created by Cadan Cummings
 
 Test
