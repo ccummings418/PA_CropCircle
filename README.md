@@ -22,9 +22,10 @@ Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements
 * Replace the path name with the path of the RAW folder created (i.e. C:\Users\Computer\Desktop\Borlaug_06102020\RAW\ ) <br/>
 **Ensure the path ends with a \ otherwise it will not work**
 
-* Run CC-Phenom step 1
+* Run CCPhenom Processor Step 1 to combine all the CSV log measurements into one Excel Workbook
 
 Sub CCPhenomProcessorStep1()<br/>
+'Replace with path to new RAW folder
 Path = "C:\Users\Computer\Desktop\Borlaug_06102020\RAW\ "<br/>
 Filename = Dir(Path & "*.csv")<br/>
 Do While Filename <> ""<br/>
@@ -39,6 +40,8 @@ Loop<br/>
 End Sub<br/>
 
 ##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X)
+
+
 
 ##### Step 3 - Organize Readings Per Sensor (ACS-430 and DAS43X)
 
