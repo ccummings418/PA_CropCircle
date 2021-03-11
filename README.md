@@ -12,6 +12,9 @@ The readings are measured approximately once per second for each band and are st
 #### Use Case for VBA Macro
 Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements into one CSV file per log measurement, several pre-processing steps are needed to organize the data. The steps I found useful were: 1.) Combine all the RAW CSV files from each sensing date/ field, 2.) organize the readings by sensor, and 3.) summarize the date by plot / treatment.
 
+![PhenomLog0](https://user-images.githubusercontent.com/80427122/110829379-abc02d80-825d-11eb-9d12-517efd8796d6.png)
+
+
 ##### Step 1 - Combining RAW CSV Files
 * Create a new folder with field and sensor date (i.e. Borlaug_06102020) and inside the folder create another file named RAW files
 * Copy and paste the CC-Phenom measurements into the RAW folder
@@ -24,58 +27,11 @@ Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements
 
 * Run CCPhenom Processor Step 1 to combine all the CSV log measurements into one Excel Workbook
 
-Sub CCPhenomProcessorStep1()<br/>
-'Replace with path to new RAW folder<br/>
-Path = "C:\Users\Computer\Desktop\Borlaug_06102020\RAW\ "<br/>
-Filename = Dir(Path & "*.csv")<br/>
-Do While Filename <> ""<br/>
-Workbooks.Open Filename:=Path & Filename, ReadOnly:=True<br/>
-For Each Sheet In ActiveWorkbook.Sheets<br/>
-Sheet.Copy after:=ThisWorkbook.Sheets(1)<br/>
-Next Sheet<br/>
-Workbooks(Filename).Close<br/>
-Filename = Dir()<br/>
-Loop<br/>
-
-End Sub<br/>
-
 ##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X) and Order Worksheets in Ascending Order
-
-
 
 
 ##### Step 3 - Create New Columns for DELTA_TMP and FPAR
 
-
-Sub CCPhenomProcessorStep3()<br/>
-<br/>
-Dim SHt As Worksheet<br/>
-For Each SHt In ThisWorkbook.Worksheets<br/>
-SHt.Activate<br/>
-<br/>
-Application.ScreenUpdating = False<br/>
-'
-    Range("AP1").Select<br/><br/>
-    ActiveCell.FormulaR1C1 = "fPAR"<br/>
-    Range("AP2").Select<br/>
-    Application.CutCopyMode = False<br/>
-    ActiveCell.FormulaR1C1 = "=RC[-2]/RC[-3]"<br/>
-    Range("AP2").Select<br/>
-    Selection.AutoFill Destination:=Range("AP2:AP" & Range("AO" & Rows.Count).End(xlUp).Row)<br/>
-    Range(Selection, Selection.End(xlDown)).Select<br/>
-    Range("AQ1").Select<br/>
-    ActiveCell.FormulaR1C1 = "DELTA_TMP"<br/>
-    Range("AQ2").Select<br/>
-    Application.CutCopyMode = False<br/>
-    ActiveCell.FormulaR1C1 = "=RC[-5]-RC[-7]"<br/>
-    Selection.AutoFill Destination:=Range("AQ2:AQ" & Range("AO" & Rows.Count).End(xlUp).Row)<br/>
-    Range(Selection, Selection.End(xlDown)).Select<br/>
-    Range("AQ2:AQ18").Select<br/>
-    Range("V21").Select<br/>
-Next SHt<br/>
-
-Application.ScreenUpdating = True<br/>
-End Sub<br/>
 
 
 ## Machine Learning - XGBoost with Hyperparameter Tuning
