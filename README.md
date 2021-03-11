@@ -19,7 +19,8 @@ Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements
 * Download Excel Macro Enabled File and place into field / sensor date folder
 
 * Open file and view macro by navigating in the Excel ribbon -> View -> Macros -> CC-Phenom
-* Replace the path name with the path of the RAW folder created (i.e. C:\Users\Computer\Desktop\Borlaug_06102020\RAW\) **Ensure the path ends with a "\" otherwise it will not work**
+* Replace the path name with the path of the RAW folder created (i.e. C:\Users\Computer\Desktop\Borlaug_06102020\RAW\) 
+**Ensure the path ends with a "\" otherwise it will not work**
 
 ##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X)
 
