@@ -39,11 +39,43 @@ Loop<br/>
 
 End Sub<br/>
 
-##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X)
+##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X) and Order Worksheets in Ascending Order
 
 
 
-##### Step 3 - Organize Readings Per Sensor (ACS-430 and DAS43X)
+
+##### Step 3 - Create New Columns for DELTA_TMP and FPAR
+
+
+Sub CCPhenomProcessorStep3()<br/>
+<br/>
+Dim SHt As Worksheet<br/>
+For Each SHt In ThisWorkbook.Worksheets<br/>
+SHt.Activate<br/>
+<br/>
+Application.ScreenUpdating = False<br/>
+'
+    Range("AP1").Select<br/><br/>
+    ActiveCell.FormulaR1C1 = "fPAR"<br/>
+    Range("AP2").Select<br/>
+    Application.CutCopyMode = False<br/>
+    ActiveCell.FormulaR1C1 = "=RC[-2]/RC[-3]"<br/>
+    Range("AP2").Select<br/>
+    Selection.AutoFill Destination:=Range("AP2:AP" & Range("AO" & Rows.Count).End(xlUp).Row)<br/>
+    Range(Selection, Selection.End(xlDown)).Select<br/>
+    Range("AQ1").Select<br/>
+    ActiveCell.FormulaR1C1 = "DELTA_TMP"<br/>
+    Range("AQ2").Select<br/>
+    Application.CutCopyMode = False<br/>
+    ActiveCell.FormulaR1C1 = "=RC[-5]-RC[-7]"<br/>
+    Selection.AutoFill Destination:=Range("AQ2:AQ" & Range("AO" & Rows.Count).End(xlUp).Row)<br/>
+    Range(Selection, Selection.End(xlDown)).Select<br/>
+    Range("AQ2:AQ18").Select<br/>
+    Range("V21").Select<br/>
+Next SHt<br/>
+
+Application.ScreenUpdating = True<br/>
+End Sub<br/>
 
 
 ## Machine Learning - XGBoost with Hyperparameter Tuning
