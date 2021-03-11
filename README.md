@@ -12,6 +12,7 @@ The readings are measured approximately once per second for each band and are st
 #### Use Case for VBA Macro
 Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements into one CSV file per log measurement, several pre-processing steps are needed to organize the data. The steps I found useful were: 1.) Combine all the RAW CSV files from each sensing date/ field, 2.) organize the readings by sensor, and 3.) summarize the date by plot / treatment.
 
+***Sample Phenom Measurement With Alternating Sensor Readings
 ![PhenomLog0](https://user-images.githubusercontent.com/80427122/110829379-abc02d80-825d-11eb-9d12-517efd8796d6.png)
 
 
