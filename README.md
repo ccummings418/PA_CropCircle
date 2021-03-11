@@ -28,7 +28,7 @@ _Sample Phenom Measurement With Alternating Sensor Readings_
 
 * Run CCPhenom Processor Step 1 to combine all the CSV log measurements into one Excel Workbook
 
-_Now all the Phenom log files are in one Excel file, however, the measurements still need to be separated per sensor and ordered by log number
+_Now all the Phenom log files are in one Excel file, however, the measurements still need to be separated per sensor and ordered by log number_
 ![PhenomLog1](https://user-images.githubusercontent.com/80427122/110830109-7bc55a00-825e-11eb-802e-2e25e40ea859.png)
 
 ##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X) and Order Worksheets in Ascending Order
