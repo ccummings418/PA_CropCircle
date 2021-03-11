@@ -24,19 +24,19 @@ Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements
 
 * Run CC-Phenom step 1
 
-Sub CCPhenomProcessorStep1()
-Path = "C:\Users\Computer\Desktop\Borlaug_06102020\RAW\"
-Filename = Dir(Path & "*.csv")
-Do While Filename <> ""
-Workbooks.Open Filename:=Path & Filename, ReadOnly:=True
-For Each Sheet In ActiveWorkbook.Sheets
-Sheet.Copy after:=ThisWorkbook.Sheets(1)
-Next Sheet
-Workbooks(Filename).Close
-Filename = Dir()
-Loop
+Sub CCPhenomProcessorStep1()<br/>
+Path = "C:\Users\Computer\Desktop\Borlaug_06102020\RAW\"<br/>
+Filename = Dir(Path & "*.csv")<br/>
+Do While Filename <> ""<br/>
+Workbooks.Open Filename:=Path & Filename, ReadOnly:=True<br/>
+For Each Sheet In ActiveWorkbook.Sheets<br/>
+Sheet.Copy after:=ThisWorkbook.Sheets(1)<br/>
+Next Sheet<br/>
+Workbooks(Filename).Close<br/>
+Filename = Dir()<br/>
+Loop<br/>
 
-End Sub
+End Sub<br/>
 
 ##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X)
 
