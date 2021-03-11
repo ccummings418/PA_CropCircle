@@ -13,10 +13,13 @@ The readings are measured approximately once per second for each band and are st
 Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements into one CSV file per log measurement, several pre-processing steps are needed to organize the data. The steps I found useful were: 1.) Combine all the RAW CSV files from each sensing date/ field, 2.) organize the readings by sensor, and 3.) summarize the date by plot / treatment.
 
 ##### Step 1 - Combining RAW CSV Files
-* Create a new folder with field and sensor date (i.e. Borlaug_06102020)
-* Inside the folder create another file named RAW files
+* Create a new folder with field and sensor date (i.e. Borlaug_06102020) and inside the folder create another file named RAW files
 * Copy and paste the CC-Phenom measurements into the RAW folder
 
+* Download Excel Macro Enabled File and place into field / sensor date folder
+
+* Open file and view macro by navigating in the Excel ribbon -> View -> Macros -> CC-Phenom
+* Replace the path name with the path of the RAW folder created **Ensure the path ends with a "/" otherwise it will not work**
 
 ##### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X)
 
