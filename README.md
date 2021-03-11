@@ -25,7 +25,7 @@ Since the Crop Circle Phenom instrument combines ACS-430 and DAS43X measurements
 * Run CC-Phenom step 1
 
 Sub CCPhenomProcessorStep1()<br/>
-Path = "C:\Users\Computer\Desktop\Borlaug_06102020\RAW\"<br/>
+Path = "C:\Users\Computer\Desktop\Borlaug_06102020\RAW\ "<br/>
 Filename = Dir(Path & "*.csv")<br/>
 Do While Filename <> ""<br/>
 Workbooks.Open Filename:=Path & Filename, ReadOnly:=True<br/>
