@@ -31,7 +31,6 @@ _Sample Phenom Measurement With Alternating Sensor Readings_
 _Now all the Phenom log files are in one Excel file, however, the measurements still need to be separated per sensor and ordered by log number_
 ![PhenomLog2A](https://user-images.githubusercontent.com/80427122/110880129-bdc4bf00-82a3-11eb-972f-7373ca268e1e.png)
 
-
 ### Step 2 - Organize Readings Per Sensor (ACS-430 and DAS43X) and Order Worksheets in Ascending Order
 * Double check all measurements have been imported and run CCPhenom Processor Step 2 
 
@@ -40,8 +39,13 @@ _All the sensor 1 and sensor 2 readings are now sorted_
 
 ### Step 3 - Create New Columns for DELTA_TMP and fPAR as well as a summary sheet
 * Adds Delta Temp (Canopy-Air Temp) and fractional PAR columns in place of unused CH1 and CH2 bands
+
+![PhenomLog3](https://user-images.githubusercontent.com/80427122/110879529-c5d02f00-82a2-11eb-9b23-4af7d48744be.png)
+
 * Creates a summary sheet at beginning where plot measurements can be summarized
 * Summary sheet comes in handy for summarizing average band readings per plot
-![PhenomLog3](https://user-images.githubusercontent.com/80427122/110879529-c5d02f00-82a2-11eb-9b23-4af7d48744be.png)
+
+![PhenomLog3](https://user-images.githubusercontent.com/80427122/110880251-f2d11180-82a3-11eb-86b2-a9e0cd58468b.png)
+
 
 ## Machine Learning - XGBoost with Hyperparameter Tuning
