@@ -1,7 +1,5 @@
-# Useful Precision Ag Tools
-*These are some useful tools and coding tricks I have developed for PA management in corn.* 
-
-Created by Cadan Cummings
+# Useful Precision Ag Tools - Crop Circle Phenom
+*These are some useful tools and coding tricks I have developed for PA management in corn using the multiparameter Crop Circle Phenom sensor.* 
 
 ## Crop Circle Phenom Excel Macro
 ### About the Sensor
