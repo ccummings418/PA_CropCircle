@@ -39,8 +39,8 @@ _All the sensor 1 and sensor 2 readings are now sorted_
 
 ### Step 3 - Create New Columns for DELTA_TMP and fPAR as well as a summary sheet
 * Adds Delta Temp (Canopy-Air Temp) and fractional PAR columns in place of unused CH1 and CH2 bands
+![PhenomLog2](https://user-images.githubusercontent.com/80427122/110880303-0d0aef80-82a4-11eb-98a5-c8457eb23a06.png)
 
-![PhenomLog3](https://user-images.githubusercontent.com/80427122/110879529-c5d02f00-82a2-11eb-9b23-4af7d48744be.png)
 
 * Creates a summary sheet at beginning where plot measurements can be summarized
 * Summary sheet comes in handy for summarizing average band readings per plot
