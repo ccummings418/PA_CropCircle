@@ -18,7 +18,7 @@ _Sample Phenom Measurement With Alternating Sensor Readings_
 * Create a new folder with field and sensor date (i.e. Borlaug_06102020) and inside the folder create another file named RAW files
 * Copy and paste the CC-Phenom measurements into the RAW folder
 
-* Download Excel Macro Enabled File and place into the new parent folder (i.e. Borlaug_06102020)
+* Download the Crop Circle Phenom Template Excel Macro Enabled File and place into the new parent folder (i.e. Borlaug_06102020)
 
 * Open file and view macro by navigating in the Excel ribbon -> View -> Macros -> CC-Phenom
 * Replace the path name with the path of the RAW folder created (i.e. C:\Users\Computer\Desktop\Borlaug_06102020\RAW\ ) <br/>
