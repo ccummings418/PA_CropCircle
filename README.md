@@ -18,11 +18,22 @@ _Sample Phenom Measurement With Alternating Sensor Readings_
 * Create a new folder with field and sensor date (i.e. Borlaug_06102020) and inside the folder create another file named RAW files
 * Copy and paste the CC-Phenom measurements into the RAW folder
 
+![Folders](https://user-images.githubusercontent.com/80427122/112680869-4d41a480-8e44-11eb-93ae-59ce79da5eb9.png)
+
+
 * Download the Crop Circle Phenom Template Excel Macro Enabled File and place into the new parent folder (i.e. Borlaug_06102020)
 
+![Folders](https://user-images.githubusercontent.com/80427122/112681218-c3460b80-8e44-11eb-9738-c23bf25bf448.png)
+
 * Open file and view macro by navigating in the Excel ribbon -> View -> Macros -> CC-Phenom
+
+![steps](https://user-images.githubusercontent.com/80427122/112681888-b1b13380-8e45-11eb-8e69-dcd41a488c26.png)
+
 * Replace the path name with the path of the RAW folder created (i.e. C:\Users\Computer\Desktop\Borlaug_06102020\RAW\ ) <br/>
-**Ensure the path ends with a \ otherwise it will not work**
+
+![path](https://user-images.githubusercontent.com/80427122/112682123-06ed4500-8e46-11eb-86c9-69daa1c10239.png)
+
+**Make sure the path ends with a \ otherwise it will not work**
 
 * Run CCPhenom Processor Step 1 to combine all the CSV log measurements into one Excel Workbook
 
